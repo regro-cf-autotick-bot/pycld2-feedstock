@@ -12,8 +12,8 @@ source:
     - relative_sources.patch
 
 build:
-  number: 0
-  skip: true  # [win]
+  number: 1
+  skip: true  # [win, python_impl == 'pypy']
 
 requirements:
   build:
@@ -43,3 +43,4 @@ extra:
     - mxr-conda
     - d-cunningham
     - JennaLipscomb
+    - AdMax18
