@@ -12,12 +12,13 @@ source:
     - relative_sources.patch
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win, python_impl == 'pypy']
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
   host:
     - pip
     - python
